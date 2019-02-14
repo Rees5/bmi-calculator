@@ -1,17 +1,17 @@
 var value=function(x, h, w) {
 return x, h, w ;
 }
-var x=parseInt(prompt("Select units: 1.Metres(M) and KG, 2.Pounds(Ib) and Inches(in) 3.CM and KG; 4.Feet(ft) and pounds(ib)"));
+var x=parseInt(prompt("Select units: 1.Metres(M) and KG, 2.CM and KG; 3.Pounds(Ib) and Inches(in) 4.Feet(ft) and pounds(ib)"));
 var h=parseInt(prompt("Input height;"));
 var w=parseInt(prompt("Input Weight;"));
-if(x === 1) {
-var bmi=((w)/(h*h));
-} else if(x===2) {
-var bmi=(w/(h*h))*703;
+if(x===4) {
+var bmi=(w/((h*h)*(144)))*703;
 } else if(x===3) {
+var bmi=(w/(h*h))*703;
+} else if(x===2) {
 var bmi=(w)/((h/100)*(h/100));
-} else if(x===4) {
-var bmi=((w)/((h*12)*(h*12)))*703;
+} else if(x===1) {
+  var bmi=w/((h)*(h));
 } else {
 alert("WARNING! Invalid selection. Kindly refresh your browser and make a valid selection!")
 }

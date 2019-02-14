@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  border: 2px solid #405e4f;
+  background-color: #55fcab;
+  color: brown;
+  cursor: context-menu;
+  }
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #021011
+}
+img {
+  float: right;
+  margin-right: 12%
+}
